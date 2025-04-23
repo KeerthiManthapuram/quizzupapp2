@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Quiz Application">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Keerthi M">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="configuration-card" id="configurationCard">
+            <h3 class="main-heading">QwizUP</h3>
+            <h6 class="configuration-sub-heading">Select Category</h6>
+            <ul class="topics-list">
+                <li class="topic-item active" id="topicItem1">
+                    <button class="topic-btn">HTML</button>
+                </li>
+                <li class="topic-item" id="topicItem2">
+                    <button class="topic-btn">CSS</button>
+                </li>
+                <li class="topic-item" id="topicItem3">
+                    <button class="topic-btn">JavaScript</button>
+                </li>
+                <li class="topic-item" id="topicItem4">
+                    <button class="topic-btn">SQL</button>
+                </li>
+            </ul>
+            <h6 class="configuration-sub-heading">No. of Questions</h6>
+            <ul class="Question-nos-list">
+                <li class="number-item active">
+                    <button class="number-btn">5</button>
+                </li>
+                <li class="number-item">
+                    <button class="number-btn">10</button>
+                </li>
+                <li class="number-item">
+                    <button class="number-btn">15</button>
+                </li>
+                <li class="number-item">
+                    <button class="number-btn">20</button>
+                </li>
+            </ul>
+            <button class="start-btn" id="startBtn">Start Quiz</button>
+        </div>
+        <div class="question-card" id="questionCard">
+            <div class="question-card-header">
+                <h3 class="main-heading2">QwizUP</h3>
+                <div class="timer">
+                    <i class="bi bi-alarm-fill clock"></i>
+                    <p class="time" id="time">5s</p>
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="question-card-body">
+                <p class="question" id="question"></p>
+                <ul class="options-list" id="optionsList"></ul>
+            </div>
+            <hr class="line" />
+            <div class="question-card-footer">
+                <p class="footer-text" id="questionStatus"></p>
+                <button class="next-btn" id="nextBtn">Next <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="quiz-result-card" id="quizResultCard">
+            <div class="result-image-holder">
+                <img class="result-image" alt="congrats_img" src="https://png.pngtree.com/png-clipart/20231003/original/pngtree-peachy-party-character-with-confetti-vector-card-illustration-congratulate-icon-vector-png-image_12949442.png" />
+            </div>
+            <div class="result-text-holder">
+                <h1 class="result-text">Great Effort!!! <span><i class="bi bi-trophy-fill trophy-icon"></i></span></h1>
+                <p class="result-text" id="questionsAttemptedText"></p>
+                <button class="replay-btn" id="replayBtn">Replay <i class="bi bi-arrow-repeat replay-icon"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
